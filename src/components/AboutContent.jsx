@@ -63,15 +63,15 @@ const AboutContent = () => {
 
           {/* Right Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-5xl font-bold mb-6 text-gray-900">
-              Your Success is Our <br /> Achievement
+            <h2 className="text-2xl sm:text-5xl font-bold mb-6 text-gray-900 leading-snug">
+              Your Success is Our <br className="hidden sm:block" /> Achievement
             </h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              At TEPNO TECH, a trusted digital marketing agency in
-              Delhi, we believe that true partnership goes beyond contracts.
-              We work as an extension of your team—raising red flags when
-              necessary, offering expert guidance, and maintaining a
-              transparent, collaborative process to deliver meaningful results.
+              At TEPNO TECH, a trusted digital marketing agency in Delhi, we
+              believe that true partnership goes beyond contracts. We work as an
+              extension of your team—raising red flags when necessary, offering
+              expert guidance, and maintaining a transparent, collaborative
+              process to deliver meaningful results.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed">
               Our strength lies in our talented people. Each member of our
@@ -84,8 +84,8 @@ const AboutContent = () => {
               With a results-driven mindset, our team ensures that every project
               we handle is delivered on time, meets your goals, and maintains
               the highest standards of quality. Whether you're looking for a
-              website development company in Delhi or complete digital
-              marketing solutions in Delhi we are committed to your success.
+              website development company in Delhi or complete digital marketing
+              solutions in Delhi we are committed to your success.
             </p>
           </div>
         </div>
@@ -146,76 +146,92 @@ const AboutContent = () => {
         </div>
       </section>
       <section className="px-6 md:px-20 py-16 bg-white text-[#0b0c0f]">
-      <div className="grid md:grid-cols-2 gap-10">
-        {/* Left Content */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Technology-Driven, Business-Focused
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            At TEPNO TECH, a trusted digital marketing company in Delhi,
-            we leverage the latest frameworks, tools, and rapid prototyping methodologies
-            to deliver scalable and cost-effective digital solutions. Our focus is to empower
-            businesses through simplified technology that is easy to use, future-ready, and aligned
-            with your goals. Whether you need custom website development in India or full-service
-            digital marketing, we provide solutions built for growth.
-          </p>
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+              Technology-Driven, Business-Focused
+            </h2>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              At TEPNO TECH, a trusted digital marketing company in Delhi, we
+              leverage the latest frameworks, tools, and rapid prototyping
+              methodologies to deliver scalable and cost-effective digital
+              solutions. Our focus is to empower businesses through simplified
+              technology that is easy to use, future-ready, and aligned with
+              your goals. Whether you need custom website development in India
+              or full-service digital marketing, we provide solutions built for
+              growth.
+            </p>
 
-          <h3 className="text-3xl md:text-4xl font-semibold mt-8 mb-4">
-            Our Quality Assurance Approach
-          </h3>
-          <p className="text-gray-700 mb-6">
-            As a top website development and digital marketing company in Delhi,
-            we ensure quality through proven QA practices:
-          </p>
+            <h3 className="text-3xl md:text-4xl font-semibold mt-8 mb-4">
+              Our Quality Assurance Approach
+            </h3>
+            <p className="text-gray-700 mb-6">
+              As a top website development and digital marketing company in
+              Delhi, we ensure quality through proven QA practices:
+            </p>
 
-          <ul className="space-y-2 text-lg font-normal">
-            <li className="flex items-start gap-3">
-              <img src={tick} alt="check" className="w-6 h-6 mt-1" />
-              <span className="text-gray-800">Internal Reviews and Regular Audits</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img src={tick} alt="check" className="w-6 h-6 mt-1" />
-              <span className="text-gray-800">Clearly Defined Task Criteria (Entry & Exit)</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img src={tick} alt="check" className="w-6 h-6 mt-1" />
-              <span className="text-gray-800">Custom Methodologies Based on Client Needs</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img src={tick} alt="check" className="w-6 h-6 mt-1" />
-              <span className="text-gray-800">Standardized Guidelines Across Projects</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img src={tick} alt="check" className="w-6 h-6 mt-1" />
-              <span className="text-gray-800">Helpdesk & Post-Deployment Support Planning</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img src={tick} alt="check" className="w-6 h-6 mt-1" />
-              <span className="text-gray-800">Continuous Communication & Feedback Loops</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img src={tick} alt="check" className="w-6 h-6 mt-1" />
-              <span className="text-gray-800">Timely Status Reports for Full Transparency</span>
-            </li>
-          </ul>
+            <ul className="space-y-2 text-lg font-normal">
+              <li className="flex items-start gap-3">
+                <img src={tick} alt="check" className="w-6 h-6 mt-1" />
+                <span className="text-gray-800">
+                  Internal Reviews and Regular Audits
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <img src={tick} alt="check" className="w-6 h-6 mt-1" />
+                <span className="text-gray-800">
+                  Clearly Defined Task Criteria (Entry & Exit)
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <img src={tick} alt="check" className="w-6 h-6 mt-1" />
+                <span className="text-gray-800">
+                  Custom Methodologies Based on Client Needs
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <img src={tick} alt="check" className="w-6 h-6 mt-1" />
+                <span className="text-gray-800">
+                  Standardized Guidelines Across Projects
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <img src={tick} alt="check" className="w-6 h-6 mt-1" />
+                <span className="text-gray-800">
+                  Helpdesk & Post-Deployment Support Planning
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <img src={tick} alt="check" className="w-6 h-6 mt-1" />
+                <span className="text-gray-800">
+                  Continuous Communication & Feedback Loops
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <img src={tick} alt="check" className="w-6 h-6 mt-1" />
+                <span className="text-gray-800">
+                  Timely Status Reports for Full Transparency
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Right Image Section */}
+          <div className="flex flex-row gap-6 items-center justify-center">
+            <img
+              src={image1}
+              alt="Technology Driven"
+              className="rounded-xl w-64 h-80 object-cover shadow-md"
+            />
+            <img
+              src={image2}
+              alt="Quality Assurance"
+              className="rounded-xl w-64 h-64 object-cover shadow-md"
+            />
+          </div>
         </div>
-
-        {/* Right Image Section */}
-        <div className="flex flex-row gap-6 items-center justify-center">
-          <img
-            src={image1}
-            alt="Technology Driven"
-            className="rounded-xl w-64 h-80 object-cover shadow-md"
-          />
-          <img
-            src={image2}
-            alt="Quality Assurance"
-            className="rounded-xl w-64 h-64 object-cover shadow-md"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };
