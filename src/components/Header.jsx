@@ -49,14 +49,19 @@ function Header({
             </div>
 
             {/* Hamburger */}
-           <div
-          className="md:hidden flex flex-col justify-center items-end gap-1 cursor-pointer"
-          onClick={toggleMenu}
-        >
-          <div className="w-6 h-1 bg-black rounded" />
-          <div className="w-6 h-1 bg-black rounded" />
-          <div className="w-6 h-1 bg-black rounded" />
-        </div>
+            <div
+              className="md:hidden flex flex-col justify-center items-end gap-1 cursor-pointer mr-20"
+              onClick={toggleMenu}
+            >
+              <div
+                className="w-6 h-1 bg-black
+          
+          
+          rounded"
+              />
+              <div className="w-6 h-1 bg-black rounded" />
+              <div className="w-6 h-1 bg-black rounded" />
+            </div>
 
             {/* Desktop Menu */}
             <ul className="hidden md:flex items-center gap-4 lg:gap-6 text-base lg:text-lg font-semibold">
@@ -153,13 +158,31 @@ function Header({
             </h2>
             <form className="space-y-4">
               {[
-                { label: "Amount (₹) *", type: "number", placeholder: "Enter amount" },
-                { label: "Full Name *", type: "text", placeholder: "Enter your full name" },
-                { label: "Email Address *", type: "email", placeholder: "Enter your email" },
-                { label: "Phone Number", type: "text", placeholder: "Enter your phone number" }
+                {
+                  label: "Amount (₹) *",
+                  type: "number",
+                  placeholder: "Enter amount",
+                },
+                {
+                  label: "Full Name *",
+                  type: "text",
+                  placeholder: "Enter your full name",
+                },
+                {
+                  label: "Email Address *",
+                  type: "email",
+                  placeholder: "Enter your email",
+                },
+                {
+                  label: "Phone Number",
+                  type: "text",
+                  placeholder: "Enter your phone number",
+                },
               ].map((field, idx) => (
                 <div key={idx}>
-                  <label className="block text-sm font-medium mb-1">{field.label}</label>
+                  <label className="block text-sm font-medium mb-1">
+                    {field.label}
+                  </label>
                   <input
                     type={field.type}
                     placeholder={field.placeholder}
