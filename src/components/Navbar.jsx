@@ -19,7 +19,7 @@ function Navbar() {
     >
       <div className="flex justify-between items-center">
         {/* Logo */}{" "}
-        <div className="flex items-center space-x-3 ml-20">
+        <div className="flex items-center space-x-3 ml-4 sm:ml-20">
         <img src={tt} alt="SARC Technology Logo" className="h-12 w-auto" />
         <Link to="/" className="text-2xl md:text-3xl font-bold ">
           <span className="text-[#ADFF1C]">TEPNO</span> TECH
