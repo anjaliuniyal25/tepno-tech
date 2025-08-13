@@ -218,18 +218,19 @@ const AboutContent = () => {
           </div>
 
           {/* Right Image Section */}
-          <div className="flex flex-row gap-6 items-center justify-center">
-            <img
-              src={image1}
-              alt="Technology Driven"
-              className="rounded-xl w-64 h-80 object-cover shadow-md"
-            />
-            <img
-              src={image2}
-              alt="Quality Assurance"
-              className="rounded-xl w-64 h-64 object-cover shadow-md"
-            />
-          </div>
+        <div className="flex flex-col sm:flex-row gap-6 items-center justify-center">
+  <img
+    src={image1}
+    alt="Technology Driven"
+    className="rounded-xl w-64 h-80 object-cover shadow-md"
+  />
+  <img
+    src={image2}
+    alt="Quality Assurance"
+    className="rounded-xl w-64 h-64 object-cover shadow-md"
+  />
+</div>
+
         </div>
       </section>
     </>
